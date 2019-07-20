@@ -169,6 +169,7 @@ Login as root using the password *redhat*.
 Now let's generate a base policy without any external devices attached. This will allow the USB hubs and any other system level USB devices. The default action of USBGuard is to block any device not in the policy.
 
 . On usbguard-demo:
+
 	[root@localhost ~]# export PS1="[\u@\[\e[41m\]\h\[\e[m\] \W]\\$ "
 	[root@localhost]# usbguard generate-policy -X
 	[root@localhost]# usbguard generate-policy -X > /etc/usbguard/rules.conf
